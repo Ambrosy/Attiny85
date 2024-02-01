@@ -1,17 +1,17 @@
 # KeyLogger
 
-### Description:
+### Descrição:
 
 #### 1: TimeBomb_KeyLogger.ino:<br>
-A Keylogger based on powershell. Works by dropping payload in temporary dir and executing it in background. Records keystrokes for set time. 
-After time runs out it send the recorded keystrokes to the webhook.site and deletes all the keylogger data from the temporary directory. <br>Please note it is now detectable by most Anti-virus programs. Only way to make it undetectable is to obfuscate the payload.<br>
+Um Keylogger baseado em PowerShell. Funciona ao depositar o payload em um diretório temporário e executá-la em segundo plano. Registra as teclas pressionadas por um tempo determinado. 
+Após o término do tempo, envia as teclas registradas para o webhook.site e exclui todos os dados do keylogger do diretório temporário. <br>Por favor, observe que agora é detectável pela maioria dos programas antivírus. A única maneira de torná-lo indetectável é ofuscar o payload.<br>
 
-**Instuctions:**<br>
-Before using it make sure the WebHook.site hook is set in keylogger payload which you will find almost at the end of the script. Also the 
-current time is set for 1 minute you can increase the time to your requirmnent in ".AddMinutes(-1)" which you will also find close to webhook location.<br>
+**Instruções:**<br>
+Antes de usar, certifique-se de que o gancho do WebHook.site está definido na carga útil do keylogger, que você encontrará quase no final do script. Além disso, o 
+tempo atual está configurado para 1 minuto; você pode aumentar o tempo conforme necessário em ".AddMinutes(-1)", que você também encontrará perto do local do webhook.<br>
 
-**Tested on:**<br>
-**OS**: Windows 10|8|7<br>
-**User**: Admin/Normal User<br>
-**Limitation**: Execution Policy, Anti-Virus :p<br>
-**Hardware**: ATtiny85 (Chinese)
+**Testado em:**<br>
+**Sistema Operacional**: Windows 10|8|7<br>
+**Usuário**: Usuário Administrador/Normal<br>
+**Limitações**: Política de Execução, Antivírus :p<br>
+**Hardware**: ATtiny85 (Chinês)
