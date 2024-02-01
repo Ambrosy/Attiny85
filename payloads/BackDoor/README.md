@@ -1,25 +1,25 @@
 # BackDoor
 
-### Description:
+### Descrição:
 
-#### 1: Remote_BackDoor.ino:<br>
-Creates account with admin privileges with name blanka and passwd Ping@123. Also hides it from login 
-screen and turn on remote desktop to be accessible from remote location.<br>
+#### 1: Remote_BackDoor.ino:
+Cria uma conta com privilégios de administrador com o nome "blanka" e senha "Ping@123". Também a oculta na tela de login e ativa a área de trabalho remota para ser acessível de um local remoto.
 
-**Tested on:**<br>
-**OS**: Windows 10<br>
-**User**: Admin User<br>
-**Hardware**: ATtiny85 (Chinese)
+**Testado em:**
+**Sistema Operacional:** Windows 10
+**Usuário:** Usuário Administrador
+**Hardware:** ATtiny85 (Chinês)
 
-#### 2: GoodOl' BackDoor.ino:<br>
-Based on old sticky key backdoor trick by adding a registry key instead of replacing the file in system32 directory. After successful run press shift 5 times on login screen and command prompt will popup with admin privileges.<br>
+#### 2: GoodOl' BackDoor.ino:
+Baseado na antiga técnica de backdoor do Sticky Keys, adicionando uma chave de registro em vez de substituir o arquivo no diretório system32. Após a execução bem-sucedida, pressione shift 5 vezes na tela de login e o prompt de comando aparecerá com privilégios de administrador.
 
-To remove the backdoor run the following command in command prompt with admin privileges and backdoor will be removed.
+Para remover a backdoor, execute o seguinte comando no prompt de comando com privilégios de administrador e a backdoor será removida.
 
 ***REG DELETE "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sethc.exe***
 
-**Tested on:**<br>
-**OS**: Windows 10/7<br>
-**User**: Admin User<br>
-**Hardware**: ATtiny85 (Chinese)
+
+**Testado em:**
+**Sistema Operacional:** Windows 10/7
+**Usuário:** Usuário Administrador
+**Hardware:** ATtiny85 (Chinês)
 
